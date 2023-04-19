@@ -17,7 +17,7 @@ CREATE TABLE "groups" (
 );
 
 CREATE TABLE "students" (
-                            group_id bigint NOT NULL REFERENCES groups(id),
+                            "group_id" bigint NOT NULL REFERENCES groups(id),
                             PRIMARY KEY ("id", "email")
 ) INHERITS(users);
 
