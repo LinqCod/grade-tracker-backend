@@ -3,6 +3,7 @@ package database
 import (
 	"database/sql"
 	"fmt"
+	_ "github.com/lib/pq"
 	"github.com/spf13/viper"
 	"log"
 )
