@@ -1,1 +1,2 @@
-configs
+app.env
+init_db.sh
