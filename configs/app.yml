@@ -4,9 +4,9 @@ app:
 postgres:
   host: localhost
   port: 5432
-  username: root
+  username: postgres
   password: root
-  dbname: grade-tracker-db
+  dbname: grade_tracker_db
 
 jwt:
   secret: "jwt-secret"
