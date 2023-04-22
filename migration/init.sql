@@ -8,7 +8,7 @@ CREATE TABLE "users" (
                             "second_name" varchar NOT NULL,
                             "patronymic" varchar NOT NULL,
                             "role" user_role,
-                            PRIMARY KEY ("id", "email")
+                            PRIMARY KEY ("id")
 );
 
 CREATE TABLE "groups" (
@@ -18,15 +18,15 @@ CREATE TABLE "groups" (
 
 CREATE TABLE "students" (
                             "group_id" bigint NOT NULL REFERENCES groups(id),
-                            PRIMARY KEY ("id", "email")
+                            PRIMARY KEY ("id")
 ) INHERITS(users);
 
 CREATE TABLE "teachers" (
-                            PRIMARY KEY ("id", "email")
+                            PRIMARY KEY ("id")
 ) INHERITS(users);
 
 CREATE TABLE "admins" (
-                            PRIMARY KEY ("id", "email")
+                            PRIMARY KEY ("id")
 ) INHERITS(users);
 
 CREATE TABLE "subjects" (
